@@ -46,8 +46,8 @@ public class TsvFileReader {
     }
 
 
-    private static void readWithCsvBeanReader() throws Exception {
 
+    private static void readWithCsvBeanReader() throws Exception {
         ICsvBeanReader beanReader = null;
         try {
             String certificateExportToWebsite = "F:\\WeTech Projects\\certificatetest\\file\\CertificateExportToWebsite.tsv";
@@ -59,8 +59,19 @@ public class TsvFileReader {
 
             TsvPojo pojo;
             while ((pojo = beanReader.read(TsvPojo.class, header)) != null) {
-                System.out.println(String.format("lineNo=%s, rowNo=%s, customer=%s", beanReader.getLineNumber(),
-                        beanReader.getRowNumber(), pojo));
+                String urlToBeAppend = "https://www.bbacerts.co.uk/uploads/files/CertificateFiles/";
+                //this will hold all existUrl List
+                List<String> existUrlList = new ArrayList<>();
+                if (pojo.getFilePath() != null && !pojo.getFilePath().equals("")) {
+                    // '\' this character is present in TSV so it is replaced with '/'
+                    String replacedDash = pojo.getFilePath().replace('\\','/');
+                    if (UrlValidator.exists(urlToBeAppend +replacedDash)){
+                        existUrlList.add(urlToBeAppend+replacedDash);
+                        System.out.println(urlToBeAppend +replacedDash);
+                    }
+                }
+
+
             }
 
         } finally {
