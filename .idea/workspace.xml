@@ -2,17 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f784731-f48f-40a5-92d2-7fce50964d2b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/file/CertificateExportToWebsiteInvalidUrl.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/file/InstallerCertificateExportToWebsite.tsv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/TsvCertificateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/file/CertificateExportToWebsite.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/file/CertificateExportToWebsite.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TsvFileReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TsvPojo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Certificate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/FileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TsvFileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/TsvPojo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/file/CertificateExportToWebsiteInvalidUrl.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Certificate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Certificate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TsvCertificateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TsvCertificateUtil.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,14 +20,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/TsvCertificateUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="153">
+              <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Certificate.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -72,6 +71,7 @@
         <option value="$PROJECT_DIR$/file/CertificateExportToWebsiteInvalidUrl.tsv" />
         <option value="$PROJECT_DIR$/src/main/java/FileReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/TsvCertificateUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Certificate.java" />
       </list>
     </option>
   </component>
@@ -96,11 +96,6 @@
             <path>
               <item name="certificatetest" type="b2602c69:ProjectViewProjectNode" />
               <item name="certificatetest" type="462c0819:PsiDirectoryNode" />
-              <item name="file" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="certificatetest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="certificatetest" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -115,12 +110,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="certificatetest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="certificatetest" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -162,6 +151,7 @@
     <configuration name="TsvCertificateUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TsvCertificateUtil" />
       <module name="certificatetest" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;F:\\WeTech Projects\\certificatetest\\file\\CertificateExportToWebsite.tsv&quot;" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,13 +194,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559657357985</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="storing invalid url in tsv file">
+      <created>1559718853446</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1559718853446</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -226,7 +224,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -270,19 +268,8 @@
     <MESSAGE value="reading tsv file" />
     <MESSAGE value="igonerd files" />
     <MESSAGE value="checking url's are valid or not and putting in list" />
-    <option name="LAST_COMMIT_MESSAGE" value="checking url's are valid or not and putting in list" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/main/java/Certificate.java</url>
-          <line>30</line>
-          <properties field="Street" class="Certificate" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="storing invalid url in tsv file" />
+    <option name="LAST_COMMIT_MESSAGE" value="storing invalid url in tsv file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
@@ -311,17 +298,6 @@
         <state relative-caret-position="-306" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Certificate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding>
-            <element signature="e#5083#5084#0" expanded="true" />
-            <element signature="e#5122#5123#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/FileReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -336,21 +312,6 @@
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="51">
           <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/file/CertificateExportToWebsite.tsv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state>
-          <caret column="165" selection-start-column="157" selection-end-column="165" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="167" selection-start-line="8" selection-start-column="167" selection-end-line="8" selection-end-column="167" />
         </state>
       </provider>
     </entry>
@@ -374,13 +335,32 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/file/CertificateExportToWebsite.tsv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state>
+          <caret column="165" selection-start-column="157" selection-end-column="165" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="167" selection-start-line="8" selection-start-column="167" selection-end-line="8" selection-end-column="167" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/TsvCertificateUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="153">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Certificate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
         </state>
       </provider>
     </entry>

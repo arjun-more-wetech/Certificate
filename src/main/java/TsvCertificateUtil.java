@@ -4,28 +4,28 @@ import org.supercsv.io.ICsvBeanReader;
 import org.supercsv.io.ICsvBeanWriter;
 import org.supercsv.prefs.CsvPreference;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 public class TsvCertificateUtil {
-    private static final String certificateExportToWebsite = "F:\\WeTech Projects\\certificatetest\\file\\CertificateExportToWebsite.tsv";
     private static final String url = "https://www.bbacerts.co.uk/uploads/files/CertificateFiles/";
     private static List<Certificate> tsvPojoList = new ArrayList<>();
 
     public static void main(String[] args) {
         try {
-            certificateReader();
+            certificateReader(args[0]);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-    private static void certificateReader() throws Exception {
+    private static void certificateReader(String file) throws Exception {
         ICsvBeanReader beanReader = null;
         try {
-            beanReader = new CsvBeanReader(new FileReader(certificateExportToWebsite), CsvPreference.TAB_PREFERENCE);
+            beanReader = new CsvBeanReader(new FileReader(file), CsvPreference.TAB_PREFERENCE);
             // the header elements are used to map the values to the bean (names must match)
             final String[] header = beanReader.getHeader(true);
             Certificate pojo;
@@ -53,7 +53,9 @@ public class TsvCertificateUtil {
 
         ICsvBeanWriter beanWriter = null;
         try {
-            beanWriter = new CsvBeanWriter(new FileWriter("F:\\WeTech Projects\\certificatetest\\file\\CertificateExportToWebsiteInvalidUrl.tsv"),
+            File file = new File("CertificateExportToWebsiteInvalidUrl.tsv");
+            file.createNewFile();
+            beanWriter = new CsvBeanWriter(new FileWriter(file.getAbsolutePath()),
                     CsvPreference.TAB_PREFERENCE);
 
             // the header elements are used to map the bean values to each column (names must match)
