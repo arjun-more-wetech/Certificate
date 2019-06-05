@@ -1,4 +1,4 @@
-public class TsvPojo {
+public class Certificate {
     String SchemeID;
     String CertificateID;
     String CertificateNumber;
@@ -7,8 +7,10 @@ public class TsvPojo {
     String CertificateSeries;
     String Status;
     String SheetID;
+
     String ProductCodeId;
     String Sheet;
+
     String SheetType;
     String Issue;
     String SheetTitle;
@@ -38,10 +40,10 @@ public class TsvPojo {
     String SheetIssueDate;
     String SheetSuspensionDate;
 
-    public TsvPojo() {
+    public Certificate() {
     }
 
-    public TsvPojo(String schemeID, String certificateID, String certificateNumber, String certificateHolder, String title, String certificateSeries, String status, String sheetID, String productCodeId, String sheet, String sheetType, String issue, String sheetTitle, String sheetStatus, String filePath, String anAbstract, String web, String material, String application, String style, String genericKeyword1, String genericKeyword2, String genericKeyword3, String genericKeyword4, String webSite, String telephone, String addressName, String street, String block, String city, String zipCode, String county, String country, String certificateFirstIssueDate, String sheetPublishedDate, String sheetWithdrswDate, String sheetIssueDate, String sheetSuspensionDate) {
+    public Certificate(String schemeID, String certificateID, String certificateNumber, String certificateHolder, String title, String certificateSeries, String status, String sheetID, String productCodeId, String sheet, String sheetType, String issue, String sheetTitle, String sheetStatus, String filePath, String anAbstract, String web, String material, String application, String style, String genericKeyword1, String genericKeyword2, String genericKeyword3, String genericKeyword4, String webSite, String telephone, String addressName, String street, String block, String city, String zipCode, String county, String country, String certificateFirstIssueDate, String sheetPublishedDate, String sheetWithdrswDate, String sheetIssueDate, String sheetSuspensionDate) {
         SchemeID = schemeID;
         CertificateID = certificateID;
         CertificateNumber = certificateNumber;
